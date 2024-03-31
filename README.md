@@ -10,8 +10,8 @@ pip install opencv-python numpy pandas
 
 The project repository folder contains 3 files:
 
-Color_detection.py – main source code of our project.
-Colorpic.jpg – sample image for experimenting.
+Project final.py – main source code of our project.
+astranaut.jpg – sample image for experimenting.
 Colors.csv – a file that contains our dataset.
 
 Upon Running double click on an image region to inspect its RGB values and color name. 
