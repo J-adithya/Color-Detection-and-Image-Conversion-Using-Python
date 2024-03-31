@@ -1,0 +1,49 @@
+import tkinter as tk
+from tkinter import *
+from tkinter import filedialog
+from PIL import Image
+from PIL import Image, ImageTk
+
+
+# Function to browse image
+def browse():
+    global img
+    filename = filedialog.askopenfilename(title="Select a File", filetypes=[("Image files", ".png;.jpg;*.jpeg")])
+    if filename:
+        img = Image.open(filename)
+
+# Function to convert image to JPEG format
+def png_to_jpg():
+    global img
+    if img:
+        export_file_path = filedialog.asksaveasfilename(defaultextension='.jpg', filetypes=[("JPEG files", "*.jpg")])
+        if export_file_path:
+            img.save(export_file_path)
+            img.close()
+
+# Function to convert image to PNG format
+def jpg_to_png():
+    global img
+    if img:
+        export_file_path = filedialog.asksaveasfilename(defaultextension='.png', filetypes=[("PNG files", "*.png")])
+        if export_file_path:
+            img.save(export_file_path)
+            img.close()
+
+# Create window
+root = Tk()
+root.geometry('650x250')
+root.title('Image Format Converter')
+
+background_image = Image.open("C:/Users/student/Downloads/pawel-czerwinski-pSNM2lEOnTo-unsplash (1).jpg")  # Replace with your image file path
+background_render = ImageTk.PhotoImage(background_image)
+background_label = Label(root, image=background_render)
+background_label.place(x=0, y=0)
+
+# Labels and buttons
+Label(root, text='Image Format Converter', font='arial 15').place(x=210, y=10)
+Button(root, text='Browse an Image', command=browse, bg='forest Green',fg='red',highlightthickness=0, font='arial 10').place(x=250, y=45)
+Button(root, text='Png To Jpg', command=png_to_jpg, bg='forest Green', fg='red', font='arial 10').place(x=120, y=95)
+Button(root, text='Jpg To Png', command=jpg_to_png, bg='forest Green', fg='red', font='arial 10').place(x=450, y=95)
+
+root.mainloop()
