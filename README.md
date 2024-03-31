@@ -18,3 +18,6 @@ Upon Running double click on an image region to inspect its RGB values and color
 
 It also Contains a Image Conversion Code that Converts an image from JPEG format to PNG and Vice Versa.
 
+OUTPUT SCREENSHOTS
+
+![Screenshot 2024-03-31 171838](https://github.com/J-adithya/Color-Detection-and-Image-Conversion-Using-Python/assets/162279108/6bb377b4-fdca-409a-aab5-a765e3bd1977)
