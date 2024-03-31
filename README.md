@@ -21,3 +21,5 @@ It also Contains a Image Conversion Code that Converts an image from JPEG format
 OUTPUT SCREENSHOTS
 
 ![Screenshot 2024-03-31 171838](https://github.com/J-adithya/Color-Detection-and-Image-Conversion-Using-Python/assets/162279108/6bb377b4-fdca-409a-aab5-a765e3bd1977)
+
+![Screenshot 2024-03-31 171819](https://github.com/J-adithya/Color-Detection-and-Image-Conversion-Using-Python/assets/162279108/cb809caa-6d1e-4127-81f0-19ad45c31ec9)
